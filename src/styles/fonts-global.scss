@@ -1,0 +1,21 @@
+// True Basket — global typography (Geist headings, Inter body via next/font in _app)
+
+body {
+  font-family: var(--tp-ff-body);
+  color: var(--tp-text-body);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.tp-section-title,
+.tp-section-title-2,
+.tp-section-title-3,
+.tp-section-title-4 {
+  font-family: var(--tp-ff-heading);
+}

@@ -1,0 +1,99 @@
+// True Basket — SCSS theme (keep in sync with src/theme/sites/true-basket.js)
+
+$font-url: 'https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap';
+
+$font-family: (
+    'ff': (
+        'body': "var(--font-inter), system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif",
+        'heading': "var(--font-geist-sans), var(--font-inter), system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif",
+        'p': "var(--font-inter), system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif",
+        'jost': "var(--font-inter), sans-serif",
+        'fontawesome': '"Font Awesome 6 Pro"',
+        'roboto': "var(--font-inter), sans-serif",
+        'oregano': "var(--font-geist-sans), sans-serif",
+        'charm': "var(--font-geist-sans), sans-serif",
+    )
+);
+
+$font-size: (
+    'fz': (
+        'body': 15px,
+        'p': 15px,
+    )
+);
+
+$colors: (
+    'common': (
+        'white': #FFFFFF,
+        'black-solid': #020617,
+        'black': #0F172A,
+    ),
+    'yellow': (
+        '1': #FBBF24,
+        '2': #FDE68A,
+        '3': #D97706,
+    ),
+    'pink': (
+        '1': #DC2626,
+        '2': #B91C1C,
+        '3': #EF4444,
+        '4': #F87171,
+    ),
+    'green': (
+        'dark': #047857,
+        '1': #10B981,
+    ),
+    'khaki': (
+        '1': #CA8A04,
+    ),
+    'blue': (
+        '1': #4F46E5,
+    ),
+    'orange': (
+        '1': #F97316,
+    ),
+    'heading': (
+        'primary': #312E81,
+        'secondary': #4F46E5,
+    ),
+    'grey': (
+        '1': #F8FAFC,
+        '2': #F1F5F9,
+        '3': #E2E8F0,
+        '4': #E2E8F0,
+        '5': #CBD5E1,
+        '6': #E2E8F0,
+        '7': #F8FAFC,
+        '8': #CBD5E1,
+        '9': #EEF2FF,
+    ),
+    'text': (
+        'body': #475569,
+        '1': #64748B,
+        '2': #475569,
+        '3': #94A3B8,
+        '4': #64748B,
+        '5': #64748B,
+        '6': #94A3B8,
+    ),
+    'theme': (
+        'primary': #4F46E5,
+        'secondary': #F97316,
+        'brown': #4F46E5,
+        'green': #10B981,
+    ),
+    'footer': (
+        'grey-1': #312E81
+    ),
+    'border': (
+        'primary': #E2E8F0,
+        'secondary': #F1F5F9,
+        '3': #E2E8F0,
+        '4': #E2E8F0,
+    )
+);
+
+$white: #FFFFFF;
+$black: #0F172A;
+$theme-primary: #4F46E5;
+$border-primary: #E2E8F0;

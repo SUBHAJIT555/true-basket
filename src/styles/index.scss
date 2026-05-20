@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import "./fonts-global.scss";
+
+@import "../components/banner/true-basket-hero.scss";
+@import "../components/features/feature-area-3.scss";
+@import "../components/shop-banner/jewelry-shop-banner.scss";
+@import "../components/about/jewelry-about.scss";
+@import "../components/about/about-page.scss";
+@import "../components/contact/contact-page.scss";
+@import "../components/faq/faq-page.scss";
+@import "../components/products/jewelry/popular-products.scss";
+@import "../components/products/jewelry/product-area.scss";
+@import "../components/products/jewelry/best-seller-prd.scss";
+@import "../layout/footers/footer-2.scss";
+@import "../components/common/cart-mini-sidebar.scss";
+@import "../components/cart-wishlist/cart-area.scss";
+@import "../components/cart-wishlist/wishlist-page.scss";
+@import "../components/checkout/checkout.scss";
+@import "../components/shop/shop-page.scss";
+@import "../components/common/product-modal/product-modal.scss";
+@import "../../public/assets/scss/main.scss";

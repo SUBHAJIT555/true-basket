@@ -1,0 +1,99 @@
+@use '../utils' as *;
+/*----------------------------------------*/
+/*  2.9 Pagination
+/*----------------------------------------*/
+
+.#{$theme-prifix}-pagination{
+	& ul{
+		@include flexbox();
+		
+		& li{
+			display: inline-block;
+			&:not(:last-child){
+				margin-right: 6px;
+			}
+			& button.disabled{
+				display: none;
+			}
+			& button,
+			& span{
+				display: inline-block;
+				width: 40px;
+				height: 40px;
+				line-height: 38px;
+				text-align: center;
+				border: 1px solid rgba($color: $black, $alpha: .1);
+				font-size: 16px;
+				font-weight: 500;
+				color: var(--tp-text-body);
+				cursor: pointer;
+				&:hover,
+				&.current{
+					background: var(--tp-theme-primary);
+					border-color: var(--tp-theme-primary);
+					color: var(--tp-common-white);
+				}
+
+				& svg{
+					@extend %tp-svg-y-2;
+				}
+			}
+		}
+	}
+}
+
+/* New Pagination Style */
+.pagination-nav-btn {
+	width: 32px;
+	height: 36px;
+	border: none;
+	background: transparent;
+	cursor: pointer;
+	transition: all 0.2s ease-out;
+	border-radius: 3px;
+	color: var(--tp-text-body);
+	
+	&:hover:not(.disabled) {
+		background: var(--tp-theme-primary);
+		color: var(--tp-common-white);
+	}
+	
+	&.disabled {
+		cursor: not-allowed;
+		opacity: 0.5;
+	}
+	
+	svg {
+		width: 18px;
+		height: 18px;
+	}
+}
+
+.pagination-page-btn {
+	padding: 6px 14px;
+	border: none;
+	background: transparent;
+	cursor: pointer;
+	transition: all 0.2s ease-out;
+	border-radius: 3px;
+	font-size: 14px;
+	font-weight: 500;
+	color: var(--tp-text-body);
+	
+	&:hover:not(.active) {
+		background: var(--tp-theme-primary);
+		color: var(--tp-common-white);
+	}
+	
+	&.active {
+		background: var(--tp-theme-primary);
+		color: var(--tp-common-white);
+	}
+}
+
+.pagination-ellipsis {
+	padding: 6px 14px;
+	color: var(--tp-text-body);
+	font-size: 14px;
+	user-select: none;
+}

@@ -1,0 +1,76 @@
+// Site toast styles — uses theme CSS variables from SCSS :root
+
+.true-basket-toast {
+  --toastify-toast-width: 360px;
+  --toastify-toast-top: 1.25rem;
+  --toastify-toast-right: 1.25rem;
+  --toastify-color-success: var(--tp-theme-primary);
+  --toastify-color-error: #DC2626;
+  --toastify-color-light: var(--tp-common-white);
+  --toastify-text-color-light: var(--tp-common-black);
+  --toastify-color-progress-success: var(--tp-theme-primary);
+  --toastify-color-progress-error: #DC2626;
+  padding: 0;
+}
+
+.true-basket-toast .Toastify__toast-container {
+  width: var(--toastify-toast-width);
+}
+
+.true-basket-toast .Toastify__toast {
+  border-radius: 12px;
+  box-shadow: 0 10px 40px rgba(15, 23, 42, 0.12);
+  border: 1px solid rgba(15, 23, 42, 0.06);
+  padding: 14px 16px;
+  min-height: 56px;
+}
+
+.true-basket-toast .Toastify__toast--success {
+  background: var(--toastify-color-light);
+  color: var(--toastify-text-color-light);
+}
+
+.true-basket-toast .Toastify__toast--error {
+  background: var(--toastify-color-light);
+  color: var(--toastify-text-color-light);
+}
+
+.true-basket-toast .Toastify__toast-icon {
+  width: 28px;
+  margin-inline-end: 12px;
+}
+
+.true-basket-toast .Toastify__toast--success .Toastify__toast-icon {
+  color: var(--toastify-color-success);
+}
+
+.true-basket-toast .Toastify__toast--error .Toastify__toast-icon {
+  color: var(--toastify-color-error);
+}
+
+.true-basket-toast-body {
+  font-size: 0.9375rem;
+  font-weight: 500;
+  line-height: 1.4;
+  padding: 0;
+}
+
+.true-basket-toast .Toastify__close-button {
+  color: var(--tp-text-1);
+  opacity: 1;
+  align-self: center;
+}
+
+.true-basket-toast .Toastify__close-button:hover {
+  color: var(--tp-common-black);
+}
+
+.true-basket-toast .Toastify__progress-bar {
+  height: 3px;
+  border-radius: 0 0 12px 12px;
+}
+
+.true-basket-toast .Toastify__toast::before,
+.true-basket-toast .Toastify__toast::after {
+  display: none !important;
+}
