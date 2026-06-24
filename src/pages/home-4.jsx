@@ -13,7 +13,7 @@ import ProductBanner from "@/components/products/electronics/product-banner";
 import ProductSmArea from "@/components/products/electronics/product-sm-area";
 import NewArrivals from "@/components/products/electronics/new-arrivals";
 import CtaArea from "@/components/cta/cta-area";
-import Footer from "@/layout/footers/footer";
+import FooterTwo from "@/layout/footers/footer-2";
 import HeaderTwo from "@/layout/headers/header-2";
 
 const HomeFour = () => {
@@ -34,7 +34,7 @@ const HomeFour = () => {
       <ProductSmArea />
       {/* <InstagramArea/> */}
       <CtaArea />
-      <Footer />
+      <FooterTwo />
     </Wrapper>
   );
 };

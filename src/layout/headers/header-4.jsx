@@ -1,12 +1,10 @@
 import React, { useState } from 'react';
-import Image from 'next/image';
 import Link from 'next/link';
 import { useDispatch } from 'react-redux';
 // internal
 import { CartTwo, Menu, Search } from '@/svg';
 import Menus from './header-com/menus';
-import logo_white from '@assets/img/logo/logo-white.svg';
-import logo_dark from '@assets/img/logo/logo.svg';
+import TrueBasketLogo from '@/components/brand/true-basket-logo';
 import useSticky from '@/hooks/use-sticky';
 import SearchBar from './header-com/search-bar';
 import OffCanvas from '@/components/common/off-canvas';
@@ -30,8 +28,8 @@ const HeaderFour = () => {
                 <div className="col-xl-2 col-lg-2 col-6">
                   <div className="logo">
                     <Link href="/">
-                      <Image className="logo-light" src={logo_white} alt="logo" />
-                      <Image className="logo-dark" src={logo_dark} alt="logo" />
+                      <TrueBasketLogo variant="light" className="logo-light" />
+                      <TrueBasketLogo variant="dark" className="logo-dark" />
                     </Link>
                   </div>
                 </div>

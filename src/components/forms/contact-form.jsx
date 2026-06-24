@@ -77,7 +77,7 @@ const ContactForm = () => {
             name="email"
             type="email"
             className="tb-contact-form__input"
-            placeholder="you@example.com"
+            placeholder={siteInfo.email}
             autoComplete="email"
           />
           <ErrorMsg msg={errors.email?.message} />

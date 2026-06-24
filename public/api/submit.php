@@ -22,8 +22,10 @@ set_exception_handler(function ($e) {
 // --- CORS ---
 $origin  = $_SERVER['HTTP_ORIGIN'] ?? '';
 $allowed = [
-    'https://supreme-cart.com',
-    'https://www.supreme-cart.com',
+    'https://true-basket.com',
+    'https://www.true-basket.com',
+    'http://localhost:3000',
+    'http://127.0.0.1:3000',
 ];
 if ($origin && in_array($origin, $allowed, true)) {
     header("Access-Control-Allow-Origin: $origin");
@@ -148,14 +150,17 @@ $smtpPass = $_ENV['SMTP_PASS'];
 $smtpPort = $_ENV['SMTP_PORT'];
 $smtpSecure = $_ENV['SMTP_SECURE'];
 
-$toAddresses = [['aditya@baharnani.com', 'Aditya Baharnani']];
+$brandName = $_ENV['SITE_BRAND_NAME'] ?? 'True Basket';
+$brandDomain = $_ENV['SITE_DOMAIN'] ?? 'true-basket.com';
+$contactEmail = $_ENV['SITE_CONTACT_EMAIL'] ?? 'info@true-basket.com';
+$tagline   = $_ENV['SITE_TAGLINE'] ?? 'Your daily essentials, delivered to your door.';
+
+$toAddresses = [[$contactEmail, $brandName]];
 $fromEmail = $smtpUser;
-$fromName  = 'Snap Gears Website';
+$fromName  = $brandName . ' Website';
 
 // --- Brand styling ---
-$brandName = 'Supreme Cart';
-$tagline   = 'Where Innovation Meets Excellence.';
-$brandColor = '#0a2540';
+$brandColor = '#4F46E5';
 $muted = '#6b7280';
 $bg = '#f9fafb';
 $cardBg = '#ffffff';

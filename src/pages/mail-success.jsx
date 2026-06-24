@@ -4,7 +4,7 @@ import SEO from "@/components/seo";
 import { seoDescriptions } from "@/data/seo-descriptions";
 import Wrapper from "@/layout/wrapper";
 import HeaderTwo from "@/layout/headers/header-2";
-import Footer from "@/layout/footers/footer";
+import FooterTwo from "@/layout/footers/footer-2";
 import CommonBreadcrumb from "@/components/breadcrumb/common-breadcrumb";
 
 const MailSuccessPage = () => {
@@ -41,7 +41,7 @@ const MailSuccessPage = () => {
           </div>
         </div>
       </section>
-      <Footer primary_style={true} />
+      <FooterTwo />
     </Wrapper>
   );
 };

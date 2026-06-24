@@ -1,0 +1,6 @@
+<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="True Basket">
+  <rect width="32" height="32" rx="8" fill="#4F46E5"/>
+  <text x="16" y="21.5" text-anchor="middle" font-family="Inter, Segoe UI, system-ui, sans-serif" font-size="13" font-weight="700" letter-spacing="-0.4">
+    <tspan fill="#FFFFFF">T</tspan><tspan fill="#FDBA74">B</tspan>
+  </text>
+</svg>

@@ -2,7 +2,7 @@ import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 // internal
-import logo from '@assets/img/logo/logo.svg';
+import TrueBasketLogo from '@/components/brand/true-basket-logo';
 import pay from '@assets/img/footer/footer-pay.png';
 import social_data from '@/data/social-data';
 import contactInfo, { siteInfo } from '@/data/contact-info';
@@ -21,7 +21,7 @@ const Footer = ({ style_2 = false, style_3 = false,primary_style=false }) => {
                   <div className="tp-footer-widget-content">
                     <div className="tp-footer-logo">
                       <Link href="/">
-                        <Image src={logo} alt="logo" />
+                        <TrueBasketLogo variant="dark" size="lg" />
                       </Link>
                     </div>
                     <p className="tp-footer-desc">{siteInfo.tagline}</p>

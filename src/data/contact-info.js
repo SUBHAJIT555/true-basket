@@ -4,21 +4,23 @@
  */
 
 export const siteInfo = {
-  companyName: 'True Basket',
-  domain: 'true-basket.com',
-  tagline: 'Your daily essentials, delivered to your door.',
+  companyName: "True Basket",
+  domain: "true-basket.com",
+  tagline: "Your daily essentials, delivered to your door.",
+  email: "info@true-basket.com",
+  websiteUrl: "https://true-basket.com",
 };
 
 export const contactInfo = {
   ...siteInfo,
 
   // Indian phone: +91 and 10-digit number (no spaces in tel: for reliable dialing)
-  phone: '+91 98765 43210',
-  phoneRaw: '919876543210', // digits only for tel: link
-  telLink: 'tel:+919876543210',
+  phone: "+91 98765 43210",
+  phoneRaw: "919876543210", // digits only for tel: link
+  telLink: "tel:+919876543210",
 
-  email: 'info@true-basket.com',
-  mailtoLink: 'mailto:info@true-basket.com',
+  email: siteInfo.email,
+  mailtoLink: `mailto:${siteInfo.email}`,
 
   // Indian address (line1, line2, city state pin)
   address: {

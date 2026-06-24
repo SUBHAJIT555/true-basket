@@ -13,7 +13,7 @@ import BestSellerProducts from "@/components/products/fashion/best-seller-produc
 import FashionTestimonial from "@/components/testimonial/fashion-testimonial";
 import FeatureAreaTwo from "@/components/features/feature-area-2";
 import InstagramAreaTwo from "@/components/instagram/instagram-area-2";
-import Footer from "@/layout/footers/footer";
+import FooterTwo from "@/layout/footers/footer-2";
 
 const HomeTwo = () => {
   return (
@@ -31,7 +31,7 @@ const HomeTwo = () => {
 
       <FeatureAreaTwo />
       <InstagramAreaTwo />
-      <Footer style_2={true} />
+      <FooterTwo />
     </Wrapper>
   );
 };

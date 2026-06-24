@@ -2,7 +2,7 @@ import React from "react";
 import SEO from "@/components/seo";
 import { seoDescriptions } from "@/data/seo-descriptions";
 import HeaderTwo from "@/layout/headers/header-2";
-import Footer from "@/layout/footers/footer";
+import FooterTwo from "@/layout/footers/footer-2";
 import Wrapper from "@/layout/wrapper";
 import CommonBreadcrumb from "@/components/breadcrumb/common-breadcrumb";
 import TermsArea from "@/components/terms/terms-area";
@@ -21,7 +21,7 @@ const TermsAndConditionsPage = () => {
         center={true}
       />
       <TermsArea />
-      <Footer primary_style={true} />
+      <FooterTwo />
     </Wrapper>
   );
 };

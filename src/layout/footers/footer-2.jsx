@@ -3,7 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import contactInfo, { siteInfo } from "@/data/contact-info";
 import { Email, Location } from "@/svg";
-import logo from "@assets/img/logo/logo.svg";
+import TrueBasketLogo from "@/components/brand/true-basket-logo";
 import pay from "@assets/img/footer/footer-pay.png";
 import { submitToApi } from "@/lib/submit-api";
 import { notifyError, notifySuccess } from "@/utils/toast";
@@ -49,7 +49,7 @@ const FooterTwo = () => {
           <div className="tb-footer__grid">
             <div className="tb-footer__brand">
               <Link href="/" className="tb-footer__logo">
-                <Image src={logo} alt={siteInfo.companyName} width={140} height={40} />
+                <TrueBasketLogo variant="light" size="lg" />
               </Link>
               <p className="tb-footer__tagline">{siteInfo.tagline}</p>
 

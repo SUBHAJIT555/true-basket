@@ -25,13 +25,7 @@
 .tb-footer__logo {
   display: inline-block;
   margin-bottom: 1rem;
-}
-
-.tb-footer__logo img {
-  width: auto;
-  height: auto;
-  max-width: 9.5rem;
-  filter: brightness(0) invert(1);
+  text-decoration: none;
 }
 
 .tb-footer__tagline {

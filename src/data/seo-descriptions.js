@@ -2,7 +2,9 @@
  * Page-specific meta descriptions for SEO. All include True Basket brand.
  * Used with <SEO pageTitle="..." description={seoDescriptions.key} /> in pages.
  */
-const brand = "True Basket";
+import { siteInfo } from "./contact-info";
+
+const brand = siteInfo.companyName;
 
 export const seoDescriptions = {
   home: `${brand} — Fresh groceries, fruits, vegetables and daily essentials delivered fast.`,

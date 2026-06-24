@@ -8,7 +8,7 @@ import ShopBreadcrumb from "@/components/breadcrumb/shop-breadcrumb";
 import ShopArea from "@/components/shop/shop-area";
 import { useGetAllProductsQuery } from "@/redux/features/productApi";
 import ErrorMsg from "@/components/common/error-msg";
-import Footer from "@/layout/footers/footer";
+import FooterTwo from "@/layout/footers/footer-2";
 import ShopRightArea from "@/components/shop/shop-right-area";
 import ShopFilterOffCanvas from "@/components/common/shop-filter-offcanvas";
 import ShopLoader from "@/components/loader/shop/shop-loader";
@@ -300,7 +300,7 @@ const ShopRightSidebarPage = () => {
         subtitle="Shop Right Sidebar"
       />
       {content}
-      <Footer primary_style={true} />
+      <FooterTwo />
     </Wrapper>
   );
 };

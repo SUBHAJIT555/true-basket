@@ -3,7 +3,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 // internal
 import { CloseTwo } from '@/svg';
-import logo from '@assets/img/logo/logo.svg';
+import TrueBasketLogo from '@/components/brand/true-basket-logo';
 import contact_img from '@assets/img/icon/contact.png';
 import language_img from '@assets/img/icon/language-flag.png';
 import MobileCategory from '@/layout/headers/header-com/mobile-category';
@@ -37,7 +37,7 @@ const OffCanvas = ({ isOffCanvasOpen, setIsCanvasOpen,categoryType = "electronic
             <div className="offcanvas__top mb-70 d-flex justify-content-between align-items-center">
               <div className="offcanvas__logo logo">
                 <Link href="/">
-                  <Image src={logo} alt="logo" />
+                  <TrueBasketLogo variant="dark" size="md" />
                 </Link>
               </div>
             </div>
